@@ -9,6 +9,8 @@ import { Wishlist } from "./Wishlist";
 import { OrderPage } from "./OrderPage";
 import { Contact } from "./Contact";
 import { SpecialDeals } from "./SpecialDeals";
+import { HashRouter as Router } from "react-router-dom";
+
 
 function App(){
   return(
