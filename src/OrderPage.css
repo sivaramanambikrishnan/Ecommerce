@@ -1,0 +1,57 @@
+.order-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+.order-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.order-card {
+  display: flex;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.order-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.order-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.status-section {
+  margin: 10px 0;
+}
+
+.delivered, .pending {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}

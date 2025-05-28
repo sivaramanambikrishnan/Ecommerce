@@ -1,0 +1,29 @@
+.wishlist-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.wishlist-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.wishlist-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}

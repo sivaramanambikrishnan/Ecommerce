@@ -1,0 +1,26 @@
+
+@media (max-width: 991.98px) {
+  .custom-offcanvas {
+    width: 50% !important;
+  }
+}
+.logout-but{
+    border-radius:10px;
+    background-color:red;
+    color:white;
+    padding:7px;
+    font-size:15px;
+    border-style:none;
+    margin-left:-8px !important;
+}
+.logout-but:hover{
+    background-color:green;
+    color:white;
+}
+body.offcanvas-open {
+  overflow: auto !important;
+}
+.offcanvas {
+  max-width: 100% !important;
+  width: 280px !important; 
+}

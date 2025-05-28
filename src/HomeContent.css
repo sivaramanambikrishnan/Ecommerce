@@ -1,0 +1,154 @@
+/* Search Bar */
+.amazon-search-bar {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  border: 2px solid rgb(194, 81, 21);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.search-category {
+  background: #f3f3f3;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button {
+  background-color: rgb(252, 14, 14);
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgb(156, 36, 36);
+}
+
+/* Responsive: Search Bar */
+@media (max-width: 480px) {
+  .amazon-search-bar {
+    max-width: 350px;
+  }
+
+  .search-button {
+    padding: 0 10px;
+  }
+}
+
+/* Card Layout */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card,
+.card-content {
+  background: #fff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover,
+.card-content:hover {
+  transform: scale(1.02);
+}
+
+.card-image,
+.card-image-pro {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-category {
+  font-size: 13px;
+  color: #999;
+}
+
+.no-result {
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-card {
+  padding: 2px;
+}
+
+/* Responsive: Cards */
+@media (max-width: 480px) {
+  .card-container {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card,
+  .card-content {
+    width: 160px;
+    max-width: 200px;
+    max-height: 200px;
+    padding-bottom: 2px;
+  }
+
+  .card-image,
+  .card-image-pro {
+    height: 100px;
+  }
+
+  .card-title {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 12px;
+  }
+
+  .card-category {
+    font-size: 10px;
+  }
+
+  .no-result {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .slider-card {
+    padding: 0;
+  }
+}
