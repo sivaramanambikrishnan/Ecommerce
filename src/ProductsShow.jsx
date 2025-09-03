@@ -44,7 +44,7 @@ export const ProductsShow = () => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post("http://localhost:8080/api/feedback", {
+      await axios.post("http://localhost:8080/feedback", {
         email: useremail,
         comment,
         rating,
@@ -61,7 +61,7 @@ export const ProductsShow = () => {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/api/feedback/${productId}`);
+      const res = await axios.get(`http://localhost:8080/feedback/${productId}`);
       if (Array.isArray(res.data)) {
         setFeedbacks(res.data);
       } else {

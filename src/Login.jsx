@@ -26,10 +26,10 @@ export const Login = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:8080/login", handledata);
+      const response = await axios.post("http://localhost:8080/api/login", handledata);
 
         const token = response.data.token; 
-  const email = handledata.email;
+         const email = handledata.email;
 
 
   localStorage.setItem("token", token);
@@ -67,6 +67,7 @@ export const Login = () => {
             placeholder="Password"
             onChange={handlechange}
             required
+            autocomplete="current-password"
           />
           <button type="submit">Login</button>
           <p className="signin-link">
@@ -78,7 +79,7 @@ export const Login = () => {
   <GoogleLogin
     onSuccess={credentialResponse => {
       const idToken = credentialResponse.credential;
-   axios.post('http://localhost:8080/google', { token: idToken })
+   axios.post('http://localhost:8080/oauth2/authorization/google', { token: idToken })
   .then(res => {
     const email = res.data.email; 
     localStorage.setItem("user", JSON.stringify(email)); 

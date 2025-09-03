@@ -25,8 +25,9 @@ export const Signin=()=>{
     setMessage("the email should end with @gmail.com ");
     return;
   }
-      const res= await axios.post("http://localhost:8080/users/signup", formData);
+      const res= await axios.post("http://localhost:8080/api/signup",formData);
       console.log(res);
+      console.log("connected");
       setMessage("Signup successful!");
       setTimeout(() => {
                     navigate('/Login'); 
@@ -42,7 +43,7 @@ export const Signin=()=>{
       <h2>Signup</h2>
       <input type="text" name="username" id="username" placeholder="Username"  onChange={handleChange} required />
       <input type="email" name="email" id="email" placeholder="Email" onChange={handleChange}   required />
-      <input type="password" name="password" id="password" placeholder="Password" onChange={handleChange} required />
+      <input type="password" name="password" id="password" placeholder="Password" onChange={handleChange} required  autocomplete="current-password" />
       <button type="submit">Sign Up</button>
       <p className="signin-link">
   Already have an account? <Link to="/Login">Sign in</Link>
